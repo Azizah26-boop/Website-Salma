@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Website Salma </title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+    body {
+      background-color: #fff0f5;
+      color: #333;
+    }
+    .navbar {
+      background-color: #3366cc !important;
+    }
+    .navbar .navbar-brand,
+    .navbar .nav-link {
+      color: #ffffff !important;
+      font-weight: bold;
+    }
+    section {
+      min-height: 100vh;
+      padding: 100px 0;
+      display: flex;
+      align-items: center;
+    }
+    header {
+      background-color: #fce4ec;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+    #tentang {
+      background-color: #e3f2fd;
+      text-align: justify;
+    }
+    #galeri {
+      background-color: #f8c8dc;
+    }
+    #kontak {
+      background-color: #e3f2fd;
+    }
+    #login {
+      background-color: #f8c8dc;
+    }
+    .btn-primary {
+      background-color: #f497b6;
+      border-color: #f497b6;
+    }
+    .btn-primary:hover {
+      background-color: #e989a0;
+      border-color: #e989a0;
+    }
+    .btn-success {
+      background-color: #3366cc;
+      border-color: #3366cc;
+    }
+    .btn-success:hover {
+      background-color: #2a52a3;
+      border-color: #2a52a3;
+    }
+  </style>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="#home">Website Salma</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#tentang">Tentang Kami</a></li>
+          <li class="nav-item"><a class="nav-link" href="#galeri">Galeri</a></li>
+          <li class="nav-item"><a class="nav-link" href="#kontak">Kontak</a></li>
+          <li class="nav-item"><a class="nav-link" href="#login">Login</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div id="home">
+    <header class="text-center">
+      <h1>Selamat Datang di Website Saya</h1>
+      <p>Nama: <strong>Salma Azizah</strong></p>
+      <p>NIM: <strong>243307025</strong></p>
+      <p>Jurusan: <strong>Teknik Informatika</strong> | Kelas: <strong>2A</strong></p>
+    </header>
+  </div>
+
+  <section id="tentang">
+    <div class="container">
+      <h2 class="text-center mb-4">Tentang Kami</h2>
+      <p>Bootstrap adalah salah satu framework CSS paling populer yang membantu pengembang dalam membuat website yang responsif dan modern dengan cepat. Bootstrap menyediakan berbagai komponen siap pakai, seperti tombol, form, navbar, modal, dan banyak lagi, yang dapat digunakan untuk mempercepat proses pengembangan. Dengan menggunakan Bootstrap, kita dapat memanfaatkan sistem grid yang fleksibel untuk mengatur tata letak (layout) halaman dengan mudah, tanpa harus menulis CSS dari awal. Ini sangat berguna untuk membuat website yang responsif, artinya tampilan website akan menyesuaikan secara otomatis dengan ukuran layar perangkat, seperti desktop, tablet, dan ponsel.</p>
+      <p>Untuk menggunakan Bootstrap, pengembang dapat menambahkannya ke dalam proyek dengan dua cara: pertama, menggunakan CDN (Content Delivery Network) untuk menyertakan file CSS dan JavaScript secara langsung dari server tanpa perlu mengunduhnya, atau kedua, mengunduh file Bootstrap secara lokal. Dengan menambahkan Bootstrap ke dalam proyek, pengembang bisa langsung mengakses berbagai class dan komponen yang telah disediakan, memungkinkan mereka untuk membangun antarmuka (UI) yang menarik dan fungsional tanpa harus menulis banyak kode. Framework ini sangat berguna terutama bagi pengembang yang ingin membuat website atau aplikasi web yang elegan dan responsif dengan lebih efisien.</p>
+    </div>
+  </section>
+
+  <section id="galeri">
+    <div class="container">
+      <h2 class="text-center mb-4">Galeri</h2>
+      <div class="row">
+        <div class="col-md-4">
+          <img src="swiss alps.jpeg" class="img-fluid rounded mb-3" alt="Gambar 1">
+        </div>
+        <div class="col-md-4">
+          <img src="243307025.JPG" class="img-fluid rounded mb-3" alt="Gambar 2">
+        </div>
+        <div class="col-md-4">
+          <img src="programmer.jpeg" class="img-fluid rounded mb-3" alt="Gambar 3">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="kontak">
+    <div class="container">
+      <h2 class="text-center">Kontak Kami</h2>
+      <form class="w-75 mx-auto">
+        <div class="mb-3">
+          <label for="namaKontak" class="form-label">Nama</label>
+          <input type="text" class="form-control" id="namaKontak" placeholder="Masukkan nama Anda">
+        </div>
+        <div class="mb-3">
+          <label for="pesanKontak" class="form-label">Pesan</label>
+          <textarea class="form-control" id="pesanKontak" rows="4" placeholder="Tulis pesan Anda di sini"></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Kirim</button>
+      </form>
+  
+      <div class="mt-5">
+        <h3>Kontak Lainnya:</h3>
+        <p><strong>Nomor Telepon:</strong> 0812-3456-7890</p>
+        <p><strong>Alamat:</strong> Jl. Kutilang No. 19B Kota Madiun</p>
+        <p><strong>Tempat:</strong> Indonesia</p>
+      </div>
+    </div>
+  </section>
+  
+  <section id="login">
+    <div class="container">
+      <h2 class="text-center mb-4">Login</h2>
+      <form class="w-50 mx-auto">
+        <div class="mb-3">
+          <label for="emailLogin" class="form-label">Email</label>
+          <input type="email" class="form-control" id="emailLogin" placeholder="Masukkan email">
+        </div>
+        <div class="mb-3">
+          <label for="passwordLogin" class="form-label">Kata Sandi</label>
+          <input type="password" class="form-control" id="passwordLogin" placeholder="Masukkan kata sandi">
+        </div>
+        <button type="submit" class="btn btn-success w-100">Masuk</button>
+      </form>
+    </div>
+  </section>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
